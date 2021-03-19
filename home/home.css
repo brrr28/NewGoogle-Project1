@@ -1,6 +1,5 @@
 .body {
     font-family: 'Montserrat', sans-serif;
-    background-image: url(https://w-dog.ru/wallpapers/12/11/481285377093631/minimalizm-gradient-fon.jpg);
 }
 
 .wraper {
@@ -39,11 +38,24 @@
     align-items: center;
 }
 
-.header_logo {
+.header_name {
     font-size: 30px;
     font-weight: 700;
     color: #fff;
 }
+
+/* .logo {
+    background: url(../home/images/photo_2021-03-19_22-59-28.jpg) no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    padding-top: 100px;
+    padding-left: 100px;
+    left: 340px;
+    top: 35px;
+    width: 10%;
+    position: absolute;
+    height: 10vh;
+} */
 
 
 /* Navigation */
@@ -65,5 +77,5 @@
 }
 
 .nav_link:hover {
-    color: rgb(98, 2, 86);
+    color: rgba(61, 213, 240, 0.726);
 }
