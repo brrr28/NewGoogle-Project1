@@ -39,7 +39,8 @@
 }
 
 .header_name {
-    font-size: 30px;
+    font-family:'Kaushan Script', cursive;
+    font-size: 40px;
     font-weight: 700;
     color: #fff;
 }
@@ -99,5 +100,3 @@
 .nav_link:hover:after {
     opacity: 6;
 }
-
-
