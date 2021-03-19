@@ -1,0 +1,64 @@
+{
+  "developers": [
+    {
+      "Name": "Bogdan",
+      "Age": "29",
+      "Color": "Green",
+      "Phone": "iPhone XR",
+      "City": "Kharkov",
+      "Hobbie": {
+        "1": "Football",
+        "2": "Dancing",
+        "3": "Coding"
+      }
+    },
+    {
+      "Name": "Lesia",
+      "Age": "28",
+      "Color": "Black",
+      "Phone": "Sumsung",
+      "City": "Kharkov",
+      "Hobbie": {
+        "1": "Volebool",
+        "2": "Bake cakes",
+        "3": "Coding"
+      }
+    },
+    {
+      "Name": "Vlad",
+      "Age": "21",
+      "Color": "Red",
+      "Phone": "iPhone 8+",
+      "City": "Kharkov",
+      "Hobbie": {
+        "1": "Travel",
+        "2": "Physics",
+        "3": "Music"
+      }
+    },
+    {
+      "Name": "Павел",
+      "Age": "22",
+      "Color": "Black",
+      "Phone": "iphone 8",
+      "City": "Харьков",
+      "Hobbie": {
+        "1": "Football",
+        "2": "Computer games",
+        "3": "Singing"
+      }
+    },
+    {
+      "Name": "Даша",
+      "Age": "22",
+      "Color": "Черный",
+      "Phone": "iphone 8",
+      "City": "Харьков",
+      "Hobbie": {
+        "1": "Футбол",
+        "2": "Компьютерные игры",
+        "3": "Компьютерные игры"
+      }
+    }
+  ]
+}

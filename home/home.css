@@ -2,8 +2,12 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 100;
     font-size: 16px;
+    
 }
 
+li{
+    list-style: none;
+}
 .wraper {
     width: 100%;
   overflow: hidden;
@@ -15,3 +19,16 @@
   padding: 0 72px;
   overflow: hidden;
 }
+
+.container_mainInfo{
+    display: flex;
+    justify-content:space-between;
+}
+ /* убрать  */
+ .img_developer{
+     width:200px;
+     height: 200px;
+ }
+ .card{
+     border:1px solid black;
+ }
