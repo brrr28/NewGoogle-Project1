@@ -22,13 +22,28 @@ li{
 
 .container_mainInfo{
     display: flex;
-    justify-content:space-between;
+    justify-content:space-around;
+    flex-wrap: wrap;
 }
- /* убрать  */
+ 
  .img_developer{
-     width:200px;
-     height: 200px;
+     width:200px;  /* убрать  */
+     height: 200px; /* убрать  */
+     max-width: 100%;
+     height: auto;
+     
+ }
+ .card_wrap{
+     text-align: center;
+     padding: 10px;
  }
  .card{
-     border:1px solid black;
+     width: calc(33% - 15px);
+     margin-bottom: 20px;
+     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
+ }
+ 
+ 
+ .card_img{
+     overflow: hidden;
  }

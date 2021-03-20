@@ -6,11 +6,7 @@
       "Color": "Green",
       "Phone": "iPhone XR",
       "City": "Kharkov",
-      "Hobbie": {
-        "1": "Football",
-        "2": "Dancing",
-        "3": "Coding"
-      }
+      "Hobbie": "My hobby is baking cakes) I also really like reading, playing checkers or chess)"
     },
     {
       "Name": "Lesia",
@@ -18,11 +14,7 @@
       "Color": "Black",
       "Phone": "Sumsung",
       "City": "Kharkov",
-      "Hobbie": {
-        "1": "Volebool",
-        "2": "Bake cakes",
-        "3": "Coding"
-      }
+      "Hobbie": "My hobby is baking cakes) I also really like reading, playing checkers or chess)"
     },
     {
       "Name": "Vlad",
@@ -30,35 +22,23 @@
       "Color": "Red",
       "Phone": "iPhone 8+",
       "City": "Kharkov",
-      "Hobbie": {
-        "1": "Travel",
-        "2": "Physics",
-        "3": "Music"
-      }
+      "Hobbie": "My hobby is baking cakes) I also really like reading, playing checkers or chess)"
     },
     {
       "Name": "Павел",
       "Age": "22",
       "Color": "Black",
       "Phone": "iphone 8",
-      "City": "Харьков",
-      "Hobbie": {
-        "1": "Football",
-        "2": "Computer games",
-        "3": "Singing"
-      }
+      "City": "Kharkov",
+      "Hobbie": "I like playing computer games and singing. Also playing football if weather agrees"
     },
     {
       "Name": "Даша",
       "Age": "22",
       "Color": "Черный",
       "Phone": "iphone 8",
-      "City": "Харьков",
-      "Hobbie": {
-        "1": "Футбол",
-        "2": "Компьютерные игры",
-        "3": "Компьютерные игры"
-      }
+      "City": "Kharkov",
+      "Hobbie": "My hobby is baking cakes) I also really like reading, playing checkers or chess)"
     }
   ]
 }
