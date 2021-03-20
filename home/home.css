@@ -1,7 +1,138 @@
+*,
+:before,
+:after {
+  box-sizing: border-box;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 .body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 100;
     font-size: 16px;
+    line-height: 2px;
     
 }
 
@@ -16,34 +147,53 @@ li{
 .container {
   max-width: 1296px;
   margin: 0 auto;
-  padding: 0 72px;
+  padding: 0 20px;
   overflow: hidden;
 }
 
 .container_mainInfo{
+    padding-top: 30px;  /* чтоыб при ховере не терялась верхняя граница
+    margin-top:200px;   /* убрать*/
     display: flex;
     justify-content:space-around;
     flex-wrap: wrap;
+    margin-bottom: 20px;
 }
  
- .img_developer{
-     width:200px;  /* убрать  */
-     height: 200px; /* убрать  */
-     max-width: 100%;
-     height: auto;
+.img_developer{
+    width: 200px;  /*delete*/
+    height: 200px;/*delete*/
+    max-width: 100%;
+    height: auto;
      
  }
- .card_wrap{
-     text-align: center;
-     padding: 10px;
+.card_wrap{
+    padding: 10px;
+    text-align: center;
+
  }
- .card{
-     width: calc(33% - 15px);
-     margin-bottom: 20px;
-     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
- }
+.card{
+    border: 1px solid black;/*delete*/
+     width: calc(20% - 15px);
+     margin-bottom: 40px;
+     box-shadow: 0 14px 28px rgba(54, 52, 52, 0.25), 0 10px 10px rgba(240, 199, 199, 0.22);
+     transition:  transform 0.2s  linear;
+    
+    }
+.card:hover{
+    transform: scale(1.1);
+}
  
- 
- .card_img{
+.card_img{
      overflow: hidden;
  }
+.card_info{
+     padding: 35px 15px 45px 15px;
+ }
+ul>li{
+     padding: 0px 10px 5px 10px;
+     margin-bottom: 5px;
+ }
+.card_list_hobbie{
+    padding: 0px 10px 5px 10px; 
+}
