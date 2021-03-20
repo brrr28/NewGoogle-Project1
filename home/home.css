@@ -15,7 +15,7 @@
 
 .wraper {
     width: 100%;
-  position: relative;
+    position: relative;
 }
 .container {
   max-width: 1296px;
@@ -29,6 +29,7 @@
   flex: 1 0 auto;
 }
 .footer {
+  position: absolute;
   flex-shrink: 0;
 }
 
