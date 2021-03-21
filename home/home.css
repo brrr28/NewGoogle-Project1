@@ -173,7 +173,6 @@ li{
 
  }
 .card{
-    border: 1px solid black;/*delete*/
      width: calc(20% - 15px);
      margin-bottom: 40px;
      box-shadow: 0 14px 28px rgba(54, 52, 52, 0.25), 0 10px 10px rgba(240, 199, 199, 0.22);
@@ -194,6 +193,4 @@ ul>li{
      padding: 0px 10px 5px 10px;
      margin-bottom: 5px;
  }
-.card_list_hobbie{
-    padding: 0px 10px 5px 10px; 
-}
+
