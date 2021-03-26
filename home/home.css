@@ -27,7 +27,7 @@ li{
   overflow: hidden;
 }
 
-/* Header */
+/* ----------------------------------Header------------------------------- */
 .header {
   font-family: 'Montserrat', sans-serif;
   padding-top: 30px;
@@ -111,7 +111,7 @@ li{
 .nav_link:hover:after {
   opacity: 6;
 }
-
+/*---------------------------------main---------------------------*/
 .container_mainInfo{
     padding-top: 30px;  /* чтоыб при ховере не терялась верхняя граница
     margin-top:200px;   /* убрать*/
