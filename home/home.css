@@ -129,18 +129,21 @@ table {
 }
 
 .body {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 100;
-    font-size: 16px;
-    line-height: 2px;
-    
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 2px;
+}
+ul > li {
+  padding: 0px 10px 5px 10px;
+  margin-bottom: 10px;
 }
 
-li{
-    list-style: none;
+li {
+  list-style: none;
 }
 .wraper {
-    width: 100%;
+  width: 100%;
   overflow: hidden;
   position: relative;
 }
@@ -151,47 +154,62 @@ li{
   overflow: hidden;
 }
 
-.container_mainInfo{
-    padding-top: 30px;  /* чтоыб при ховере не терялась верхняя граница
+.container__mainInfo {
+  padding-top: 30px; /* чтоыб при ховере не терялась верхняя граница
     margin-top:200px;   /* убрать*/
-    display: flex;
-    justify-content:space-around;
-    justify-content:space-between;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
 }
- 
-.img_developer{
-    width: 200px;  /*delete*/
-    height: 200px;/*delete*/
-    max-width: 100%;
-    height: auto;
-     
- }
-.card_wrap{
-    padding: 10px;
-    text-align: center;
 
- }
-.card{
-     width: calc(20% - 15px);
-     margin-bottom: 40px;
-     box-shadow: 0 14px 28px rgba(54, 52, 52, 0.25), 0 10px 10px rgba(240, 199, 199, 0.22);
-     transition:  transform 0.2s  linear;
-    
-    }
-.card:hover{
-    transform: scale(1.1);
+.img__developer {
+  width: 200px; /*delete*/
+  height: 200px; /*delete*/
+  max-width: 100%;
+  height: auto;
 }
- 
-.card_img{
-     overflow: hidden;
- }
-.card_info{
-     padding: 35px 15px 45px 15px;
- }
-ul>li{
-     padding: 0px 10px 5px 10px;
-     margin-bottom: 5px;
- }
+.card__wrap {
+  padding: 10px;
+  text-align: center;
+  
+}
+.card {
+  width: calc(25% - 15px);
+  margin-bottom: 40px;
+  box-shadow: 0 14px 28px rgba(54, 52, 52, 0.25),    0 10px 10px rgba(240, 199, 199, 0.22);
+  transition: transform 0.2s linear;
+  background-color: #fdf4e3;
+  position: relative;
+  -webkit-transition: transform 0.2s linear;
+  -moz-transition: transform 0.2s linear;
+  -ms-transition: transform 0.2s linear;
+  -o-transition: transform 0.2s linear;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card__img {
+  overflow: hidden;
+}
+.card__info {
+  margin-bottom: 35px;
+  padding: 15px 5px 20px;
+}
+
+
+.card__buttonAdd {
+    position: absolute;
+    bottom: 10px;
+    left: 100%;
+    margin-left: -65px;
+    margin-bottom: 25px;
+    width: 50px;
+    padding: 5px 10px;
+}
+.card__buttonAdd:hover {
+  box-shadow: 0 4px 5px rgba(2, 2, 2, 0.6);
+}
 

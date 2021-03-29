@@ -11,12 +11,12 @@ let infoDevelopers = new Promise(function (resolve, reject) {
     );
   
   
-  let card_info = document.getElementsByClassName("card_info"); //html  коллекция для получ всех карточек
+  let card__info = document.getElementsByClassName("card__info"); //html  коллекция для получ всех карточек
   
   // ф-ция выводит и перебирает циклом распарсеный JSON и добавляет в карточки инфу
   function showInfoDevelopers(json) {
     var dataDevelopInfo = json; // сам распарсеный файл json
-    for (var i = 0; i < card_info.length; i++) {
+    for (var i = 0; i < card__info.length; i++) {
       // перебор коллекции
       for (var i = 0; i <= dataDevelopInfo.developers.length; i++) {
         var ul = document.createElement("ul");
@@ -25,7 +25,7 @@ let infoDevelopers = new Promise(function (resolve, reject) {
           ul.appendChild(li)
           li.innerHTML = `${[key]}: ${dataDevelopInfo.developers[i][key]}`;
          
-          card_info[i].appendChild(ul);
+          card__info[i].appendChild(ul);
         }
       }
     }
