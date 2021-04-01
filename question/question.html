@@ -52,10 +52,16 @@
                 </button>
                 <div class="popup">
                     <div class="container__popup">
+                        
                         <form class="form__addQuastion">
-                            <div class="popup__question-title">
-                                <input type="text" class="quastion__popup" placeholder="write your quastion">
+                            <div class="close__button">
+                                <a class="close__link" href="">X</a>
                             </div>
+                            <div class="popup__question">
+                                <p class="popup__question-title">Question</p>
+                                <textarea maxlength="255" type="text" class="quastion__popup" placeholder="write your quastion"></textarea>
+                            </div>
+                            <p class="popup__question-title">Theme</p>
                             <select name="selections-box__field">
                                 <option class="selections-box__value" value="Select_questions_theme" selected>Select questions theme</option>
                                 <option class="selections-box__value" value="value1"> 1</option>

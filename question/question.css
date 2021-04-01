@@ -154,12 +154,30 @@ body {
 /*---------------------------------add quastion---------------------------*/
 .quastion__popup {
   height: 50px;
-  width: auto;
+  width: 400px;
   margin-bottom: 40px;
 }
-
+.close__button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  
+}
 .form__addQuastion {
   display: none;
+  position: fixed;
+  
+  top: 18%;
+  left: 41%;
+  width: 500px;
+  height: 300px;
+  border: 1px solid #000;
+  background-color:rgb(188, 204, 207);
+  text-align: center;
+}
+.close__link {
+  text-decoration: none;
+  color: #000;
 }
 
 
