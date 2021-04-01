@@ -110,6 +110,7 @@ body {
 .container__selections{
   display: flex;
   justify-content:space-between;
+  align-items: center;
 
 }
 /*-------------------------------MAIN-----------------------------*/
@@ -143,6 +144,25 @@ body {
   z-index: 1;
   margin-top: -3px;
 }
+
+.selections-box__AddQuestions {
+  width: 70px;
+  height: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+/*---------------------------------add quastion---------------------------*/
+.quastion__popup {
+  height: 50px;
+  width: auto;
+  margin-bottom: 40px;
+}
+
+.form__addQuastion {
+  display: none;
+}
+
+
 
 /*---------------------------------FOOTER---------------------------*/
 /* .footer {
