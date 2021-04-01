@@ -6,7 +6,6 @@ function getRequest(url, params) {
     xhr.onreadystatechange = function () {
       if (xhr.readyState === 4 && xhr.status === 200) {
         resolve(xhr.response)
-        //console.log(xhr.responseText);
       }
     };
 
@@ -17,7 +16,6 @@ function getRequest(url, params) {
 getRequest("/developers")
 .then(function(response) {
   var data = JSON.parse(response);
- // console.log( data.developers);
   showInfoDevelopers(data)
 }).catch(function(error){
   console.log("Error!!!");
@@ -27,7 +25,6 @@ getRequest("/developers")
 
 
 let card__info = document.getElementsByClassName("card__info"); 
-
 
 function showInfoDevelopers(json) {
   var dataDevelopInfo = json; 
