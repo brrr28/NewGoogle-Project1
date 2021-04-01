@@ -51,7 +51,7 @@ var modalBtn = document.querySelector('.modalBtn');
 var span = document.getElementsByClassName('close') [0];
 
 modalBtn.onclick = function () {
-    modal.style.display = 'block'
+    modal.style.display = 'block';
 }
 span.onclick = function () {
     modal.style.display = 'none';
