@@ -18,6 +18,17 @@
 
     <main class="main">
         <div class="container container__mainInfo">
+            <div class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>first</p>
+            <input type="text" >
+            <p>second</p>
+            <input type="text">
+            <p>second</p>
+            <input type="text">
+        </div>
+    </div>
                         <!-- карточки девелоперов -->
             <div class="card">
                 <div class="card__wrap">
@@ -26,13 +37,8 @@
                     </div>
                     <div class="card__info"></div>
                     <div class="card__editWrapper editInfo">
-                        <button class="modalBtn">Open Modal</button>
-    <div class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <p>Модальное окно!</p>
-        </div>
-    </div> 
+                        <button class="modalBtn">Edit</button>
+     
                     </div>
                 </div>
             </div>
@@ -42,8 +48,8 @@
                         <img  class = "img__developer" src="https://images.ua.prom.st/1065689111_vafelna-kartinka-buba.jpg" alt="Photo_developer">
                     </div>
                     <div class="card__info"></div>
-                    <div  class ="card__button">
-                        <button class = "card__buttonAdd">Edit</button>
+                    <div class="card__editWrapper editInfo">
+                        <button class="modalBtn">Edit</button>
                     </div>
                 </div>
             </div>
@@ -53,8 +59,9 @@
                         <img  class = "img__developer" src="https://images.ua.prom.st/1065689111_vafelna-kartinka-buba.jpg" alt="Photo_developer">
                     </div>
                     <div class="card__info"></div>
-                    <div  class ="card__button ">
-                        <button class = "card__buttonAdd">Edit</button>
+                    <div class="card__editWrapper editInfo">
+                        <button class="modalBtn">Edit</button>
+     
                     </div>
                 </div>
             </div>
@@ -64,11 +71,15 @@
                         <img  class = "img__developer" src="https://images.ua.prom.st/1065689111_vafelna-kartinka-buba.jpg" alt="Photo_developer">
                     </div>
                     <div class="card__info"></div>
-                    <div  class ="card__button ">
-                        <button class = "card__buttonAdd">Edit</button>
+                    <div class="card__editWrapper editInfo">
+                        <button class="modalBtn">Edit</button>
+     
                     </div>
                 </div>
-            </div>           
+            </div>
+
+
+           
                         <!-- карточки девелоперов -->
     </main>
 
@@ -82,6 +93,5 @@
  </div>
  
 <script src="home.js"></script>
-<script src= "home.modal.js"></script>
 </body>
 </html>

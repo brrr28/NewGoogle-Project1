@@ -47,21 +47,27 @@ function showInfoDevelopers(json) {
 ////////////////___________modal on cards develop__________//////
 
 var modal = document.querySelector('.modal');
-var modalBtn = document.querySelector('.modalBtn');
-var span = document.getElementsByClassName('close') [0];
+var modalBtn = document.querySelectorAll('.modalBtn');
+var span = document.getElementsByClassName('close')[0];
 
-modalBtn.onclick = function () {
-    modal.style.display = 'block'
-}
-span.onclick = function () {
+modalBtn.forEach(function(modalBtn) {
+  modalBtn.addEventListener('click', function () {
+      modal.style.display = 'block'
+      console.log(11)
+  })
+})
+
+span.addEventListener('click', function () {
     modal.style.display = 'none';
-} 
-window.onclick = function (event) {
-    if (event.target === modal){
+}) 
+
+
+window.addEventListener('click', function (e) {
+    if (e.target == modal){
         modal.style.display = 'none';
         
     }
-}
+})
 
 
 
