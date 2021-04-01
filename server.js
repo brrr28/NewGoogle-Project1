@@ -20,12 +20,12 @@ function handleReq(request, response){
  }
  if(request.url === "/developers" && request.method === 'GET'){
 
-   var data = fs.readFileSync('home/data.json')
+   var data = fs.readFileSync('home/developers.json')
    response.writeHead(200, headers);
    response.end(data);
  }
  if(request.url === "/" && request.method === 'GET'){
-  var data = fs.readFileSync('home/data.json')
+  var data = fs.readFileSync('home/developers.json')
   response.writeHead(200, headers);
   response.end(data);
 }
@@ -36,9 +36,9 @@ function handleReq(request, response){
         throw error;
      }
      console.log(request.body)
-     var devs = JSON.parse(fs.readFileSync('home/data.json'))
+     var devs = JSON.parse(fs.readFileSync('home/developers.json'))
      var data = Object.assign(devs, request.body);
-     fs.writeFileSync("home/data.json",JSON.stringify(data));
+     fs.writeFileSync("home/developers.json",JSON.stringify(data));
      
      response.writeHead(200, headers);
      response.end('daaa detkaaa')

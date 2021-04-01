@@ -44,10 +44,33 @@ function showInfoDevelopers(json) {
 
 
 
+////////////////___________modal on cards develop__________//////
+
+var modal = document.querySelector('.modal');
+var modalBtn = document.querySelector('.modalBtn');
+var span = document.getElementsByClassName('close') [0];
+
+modalBtn.onclick = function () {
+    modal.style.display = 'block'
+}
+span.onclick = function () {
+    modal.style.display = 'none';
+} 
+window.onclick = function (event) {
+    if (event.target === modal){
+        modal.style.display = 'none';
+        
+    }
+}
 
 
 
 
+// editInfoBox.onclick = function(event) {
+//     if (event.target == editInfoBox) {
+//       editInfoBox.style.display = "none";
+//     }
+// }
 
 
 
