@@ -4,30 +4,57 @@
   box-sizing: border-box;
 }
 
-body {
+.body {
   font-family: 'Montserrat', sans-serif;
-  background: 
-  url(../home/images/minimalizm-gradient-fon.jpg) center
-  no-repeat;
+}
+
+li{
+    list-style: none;
+}
+.wraper {
+  width: 100%;
+  min-height: 100vh;
+  background: url(../home/images/minimalizm-gradient-fon.jpg) center no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
 }
-.header__logo{
-  width: 250px;
-  height: auto;
+.container {
+  max-width: 1296px;
+  
+  margin: 0 auto;
+  padding: 0 20px;
+  overflow: hidden;
 }
 .header {
   font-family: 'Montserrat', sans-serif;
-  padding-top: 30px;
-  width: 100%;
-  flex-direction: column;
+  height: 150px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: all .5s;
+  
+
+  /* background: 
+  url(../home/images/minimalizm-gradient-fon.jpg) center
+  no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover; */
+}
+.header__scroll {
+  background: rgb(238, 214, 214 , 0.7);
+  transition: all .5s;
+}
+.img__cat {
+  width: 150px;
+  height: auto;
 }
 
 .header_all {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 150px;
+  padding-top: 20px;
 }
 
 .header_name {
