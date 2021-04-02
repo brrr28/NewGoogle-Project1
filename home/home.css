@@ -43,7 +43,7 @@ li{
 }
 .header__scroll {
   background: rgb(238, 214, 214 , 0.7);
-  transition: all .8s;
+  transition: all .5s;
 }
 .img__cat {
   width: 150px;

@@ -18,6 +18,11 @@ li{
   -webkit-background-size: cover;
   background-size: cover;
 }
+
+.wraper {
+    width: 100%;
+   
+}
 .container {
   max-width: 1296px;
   margin: 0 auto;
