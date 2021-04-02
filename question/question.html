@@ -28,20 +28,82 @@
     </header>
 
     <main class="main">
-        <div class="questions">
-            <div class="questions__box">
-                <p class="questions__title">YA ZAEBALSYA</p>
-                <div class="questions__text">awd</div>
-            </div>
-            <div class="questions__box">
-                <p class="questions__title">YA ZAEBALSYA</p>
-                <div class="questions__text">sdw</div>
-            </div>
-            <div class="questions__box">
-                <p class="questions__title">YA ZAEBALSYA</p>
-                <div class="questions__text">awd</div>
+        <div class="container ">
+            <div class="container__selections">
+                <div class="selections-box">
+                    <select name="selections-box__field">
+                        <option class="selections-box__value" value="Select_file_system" selected>Select file system</option>
+                        <option class="selections-box__value" value="JSON">JSON</option>
+                        <option class="selections-box__value" value="XML" >XML </option>
+                        <option class="selections-box__value" value="YAML">YAML</option>
+                    </select>
+                    <select name="selections-box__field">
+                        <option class="selections-box__value" value="Select_questions_theme" selected>Select questions theme</option>
+                        <option class="selections-box__value" value="value1">1</option>
+                        <option class="selections-box__value" value="value2">2</option>
+                        <option class="selections-box__value" value="value3">3</option>
+                        <option class="selections-box__value" value="value3">4</option>
+                        <option class="selections-box__value" value="value3">5</option>
+                    </select>
+                </div>
+            <div class="selections-box__button">
+                <button class= "selections-box__AddQuestions">
+                    <p class="box__title">Add quastion +</p> 
+                </button>
+                <div class="popup">
+                    <div class="container__popup">
+                        
+                        <form class="form__addQuastion">
+                            <div class="close__button">
+                                <a class="close__link" href="">X</a>
+                            </div>
+                            <div class="popup__question">
+                                <p class="popup__question-title">Question</p>
+                                <textarea maxlength="255" type="text" class="quastion__popup" placeholder="write your quastion"></textarea>
+                            </div>
+                            <p class="popup__question-title">Theme</p>
+                            <select name="selections-box__field">
+                                <option class="selections-box__value" value="Select_questions_theme" selected>Select questions theme</option>
+                                <option class="selections-box__value" value="value1"> 1</option>
+                                <option class="selections-box__value" value="value2" > 2</option>
+                                <option class="selections-box__value" value="value3"> 3</option>
+                                <option class="selections-box__value" value="value3"> 4</option>
+                                <option class="selections-box__value" value="value3"> 5</option>
+                            </select>
+                            <div class="button__container">
+                                <button class="button__cancel">
+                                    <p class="cancel__title">cancel</p>
+                                </button>
+                                <button class="button__create">
+                                    <p class="create__title">create</p>
+                                </button>
+                            </div>
+                        </form> 
+                        
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
+
+    <!-- TEST ELEMENT -->
+
+    <div class="questions">
+        <!--Slider Box-->
+        <div class="questions__box">
+            <p class="questions__title">YA ZAEBALSYA</p>
+            <div class="questions__text">awd</div>
+        </div>
+        <div class="questions__box">
+            <p class="questions__title">YA ZAEBALSYA</p>
+            <div class="questions__text">sdw</div>
+        </div>
+        <div class="questions__box">
+            <p class="questions__title">YA ZAEBALSYA</p>
+            <div class="questions__text">awd</div>
+        </div>
+    </div>
+
     </main>
 
     <footer class="footer">

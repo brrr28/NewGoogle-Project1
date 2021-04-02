@@ -4,18 +4,17 @@
     box-sizing: border-box;
   }
 
-.body {
+body {
     font-family: 'Montserrat', sans-serif;
-}
-
-.wraper {
-    width: 100%;
-    height: 100vh;
     background: 
     url(../home/images/minimalizm-gradient-fon.jpg) center
     no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
+}
+
+.wraper {
+    width: 100%;
 }
 .container {
     max-width: 1296px;
@@ -107,8 +106,14 @@
 .nav_link:hover:after {
     opacity: 6;
 }
-
+/*-------------------------------MAIN-----------------------------*/
+.container__selections{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
 /*                               TEST ELEMENT                     */
+
 .questions {
   margin: 10px 50px;
   border-radius: 10px;
@@ -132,17 +137,92 @@
   padding-left: 80px;
 }
 
+/*-------------------------------MAIN-----------------------------*/
+.selections-box__field{
+  position: relative;
+  display: block;
+  width: 100%; /* от ширины блока div */
+  padding: .75rem 2.5rem .75rem 1rem;/* отступы от текста до рамки */
+  background: none; /* убираем фон */
+  border: 1px solid #ccc; /* рамка */
+  border-radius: 3px;/* скругление полей формы */
+  -webkit-appearance: none;/* Chrome */
+  -moz-appearance: none;/* Firefox */
+  appearance: none;/* убираем дефолнтные стрелочки */
+  font-family: inherit;/* наследует от родителя */
+  font-size: 1rem;
+  color: #444;
+}
 
+.questions__title {
+  color:#fff;
+  padding-left: 80px;
+}
+
+.selections-box__field:after {
+  content: "";
+  display: block;
+  border-style: solid;
+  border-width: 6px 5px 0 5px;
+  border-color: #000 transparent transparent transparent;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  z-index: 1;
+  margin-top: -3px;
+}
+
+.selections-box__AddQuestions {
+  width: 70px;
+  height: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+/*---------------------------------add quastion---------------------------*/
+.quastion__popup {
+  height: 50px;
+  width: 400px;
+  margin-bottom: 40px;
+}
+.close__button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  
+}
+.form__addQuastion {
+  display: none;
+  position: fixed;
+  
+  top: 18%;
+  left: 41%;
+  width: 500px;
+  height: 300px;
+  border: 1px solid #000;
+  background-color:rgb(188, 204, 207);
+  text-align: center;
+}
+.close__link {
+  text-decoration: none;
+  color: #000;
+}
+.button__container {
+  margin-top: 30px;
+}
+.button__cancel {
+  margin-right: 20px;
+}
 
 /*---------------------------------FOOTER---------------------------*/
-.footer {
+/* .footer {
     position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
     border: 1px solid rgb(236, 163, 163);
     
-  }
+  } */
   
   .footer__nav {
     display: flex;
