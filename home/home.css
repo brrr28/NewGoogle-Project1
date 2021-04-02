@@ -13,7 +13,6 @@ li{
 }
 .wraper {
   width: 100%;
-  min-height: 100vh;
   background: url(../home/images/minimalizm-gradient-fon.jpg) center no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
@@ -190,7 +189,7 @@ li {
 
 
 /*************** m o d a l **************/
-.modal{
+.modalEdit__modal{
   display: none;
   position: fixed;
   z-index: 2;
@@ -202,7 +201,7 @@ li {
   background-color: rgba(170, 170, 170, 0.8);
   
 }
-.modal-content{
+.modalEdit__modal-content{
   background: linear-gradient(90deg, #aea4e3, #d3ffe8);
   margin: 10% auto;
   padding: 20px;
@@ -210,7 +209,7 @@ li {
   width: 30%;
   height: 30%;
 }
-.close{
+.modalEdit__modal-close{
   color: rgb(7, 2, 2);
   float: right;
   font-size: 40px;

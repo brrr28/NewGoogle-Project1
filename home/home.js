@@ -50,40 +50,30 @@ function showInfoDevelopers(json) {
 
 ////////////////___________modal on cards develop__________//////
 
-var modal = document.querySelector('.modal');
+var modalEdit__modal = document.querySelector('.modalEdit__modal');
 var modalBtn = document.querySelectorAll('.modalBtn');
-var span = document.getElementsByClassName('close')[0];
+var modalEdit__modalClose = document.getElementsByClassName('modalEdit__modal-close')[0];
 
 modalBtn.forEach(function(modalBtn) {
   modalBtn.addEventListener('click', function () {
-      modal.style.display = 'block'
+    modalEdit__modal.style.display = 'block'
       console.log(11)
+      editInfo__field = document.querySelector('.editInfo__field')
+      editInfo__field.innerHTML = 'mmkff'
   })
 })
 
-span.addEventListener('click', function () {
-    modal.style.display = 'none';
+modalEdit__modalClose.addEventListener('click', function () {
+  modalEdit__modal.style.display = 'none';
 }) 
 
 
 window.addEventListener('click', function (e) {
-    if (e.target == modal){
-        modal.style.display = 'none';
+    if (e.target == modalEdit__modal){
+      modalEdit__modal.style.display = 'none';
         
     }
 })
-
-
-
-
-// editInfoBox.onclick = function(event) {
-//     if (event.target == editInfoBox) {
-//       editInfoBox.style.display = "none";
-//     }
-// }
-
-
-
 
 
 // var a = {
