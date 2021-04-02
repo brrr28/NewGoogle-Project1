@@ -28,7 +28,7 @@ let infoDevelopers = new Promise(function (resolve, reject) {
           
           console.log(dataDevelopInfo.developers[i])
           let li = document.createElement("li");
-          ul.appendChild(li)
+          ul.appendChild(li);
           li.innerHTML = `${[key]}: ${dataDevelopInfo.developers[i][key]}`;
          
           card_info[i].appendChild(ul);
@@ -37,3 +37,9 @@ let infoDevelopers = new Promise(function (resolve, reject) {
     }
   }
   
+
+
+  window.addEventListener('scroll' , function (){
+    var header = document.querySelector('.header__wrapper');
+    header.classList.toggle('header__scroll', window.scrollY > 0);
+  });

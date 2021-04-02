@@ -7,4 +7,8 @@ formButton.onclick = function () {
 var closeButton = document.querySelector('.close__button');
 closeButton.onclick = function () {
     popup.style.display = 'none';
-}
+};
+window.addEventListener('scroll' , function (){
+    var header = document.querySelector('.header__wrapper');
+    header.classList.toggle('header__scroll', window.scrollY > 0);
+  });
