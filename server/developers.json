@@ -1,0 +1,36 @@
+{
+  "developers": [
+    {
+      "Name": "Bogdan",
+      "Age": "29",
+      "Color": "Green",
+      "Phone": "iPhone XR",
+      "City": "Kharkov",
+      "Hobbie": "My hobby is baking cobby is baking cakes) I also really like reading,akes checkers or chess)"
+    },
+    {
+      "Name": "Lesia",
+      "Age": "28",
+      "Color": "Black",
+      "Phone": "Sumsung",
+      "City": "Kharkov",
+      "Hobbie": "My hobby is baking cakes) I also really like reading, playing checkers or chess)"
+    },
+    {
+      "Name": "Павел",
+      "Age": "22",
+      "Color": "Black",
+      "Phone": "iphone 8",
+      "City": "Kharkov",
+      "Hobbie": "I like playing computer games and singing. Also playing football if weather agrees"
+    },
+    {
+      "Name": "Даша",
+      "Age": "22",
+      "Color": "Black",
+      "Phone": "iphone 8",
+      "City": "Kharkov",
+      "Hobbie": "My hobby is baking cakes) I also really like reading, playing checkers or chess)"
+    }
+  ]
+}
