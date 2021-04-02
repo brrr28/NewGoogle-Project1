@@ -108,7 +108,29 @@
     opacity: 6;
 }
 
+/*                               TEST ELEMENT                     */
+.questions {
+  margin: 10px 50px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-start;
+  border: #fff solid;
+}
 
+.questions__box {
+  width: 400px;
+  height: 420px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px #fff;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.questions__title {
+  color:#fff;
+  padding-left: 80px;
+}
 
 
 
