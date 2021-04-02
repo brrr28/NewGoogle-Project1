@@ -221,7 +221,13 @@ li {
 
 /*************** m o d a l **************/
 
-
+.footer {
+  /* position: absolute; */
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  
+}
 
 .footer__nav {
   display: flex;
