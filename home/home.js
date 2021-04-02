@@ -28,17 +28,21 @@ let card__info = document.getElementsByClassName("card__info");
 
 function showInfoDevelopers(json) {
   var dataDevelopInfo = json; 
-  for (var i = 0; i < card__info.length; i++) {
     for (var i = 0; i <= dataDevelopInfo.developers.length; i++) {
       var ul = document.createElement("ul");
       for (let key in dataDevelopInfo.developers[i]) {
-        let li = document.createElement("li");
+        console.log(key)
+        if(key === "ID"){
+          continue;
+        }
+        else{
+          let li = document.createElement("li");
         ul.appendChild(li)
         li.innerHTML = `${[key]}: ${dataDevelopInfo.developers[i][key]}`;
-
+        }
+        
         card__info[i].appendChild(ul);
       }
-    }
   }
 }
 
