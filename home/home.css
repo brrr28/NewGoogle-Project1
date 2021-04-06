@@ -126,23 +126,88 @@ li {
   overflow: hidden;
 }
 
-.container__mainInfo {
+
+/*********************************************************************/
+.developBox{
+  display: flex;
+  justify-content:space-around;
+
+}
+.cardDevelop{
+  border:2px solid red;
+  width: calc(25% - 15px);
+  text-align: center;
+  padding: 10px;
+}
+
+.imgDev{
+  width: 150px;
+  height: 150px;
+
+
+}
+
+
+
+
+.modalBlock{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modalContent{
+    background-color: rgb(124, 116, 116);
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    height: 300px;
+}
+.modalSpan{
+  color: rgb(3, 3, 3);
+  float: left;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**********************************************************************/
+/* .container__mainInfo {
   padding-top: 30px; /* чтоыб при ховере не терялась верхняя граница
     margin-top:200px;   /* убрать*/
-  display: flex;
+  /* display: flex;
   justify-content: space-around;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 20px;
-}
-
+  margin-bottom: 20px; */
+/*
 .img__developer {
   width: 200px; /*delete*/
-  height: 200px; /*delete*/
-  max-width: 100%;
-  height: auto;
-}
-.card__wrap {
+  /* height: 200px; /*delete*/
+  /* max-width: 100%;
+  height: auto; */
+/* .card__wrap {
   padding: 10px;
   text-align: center;
   
@@ -170,10 +235,10 @@ li {
 .card__info {
   margin-bottom: 35px;
   padding: 15px 5px 20px;
-}
+} */
 
 
-.card__buttonAdd {
+/* .card__buttonAdd {
     position: absolute;
     bottom: 10px;
     left: 100%;
@@ -184,7 +249,7 @@ li {
 }
 .card__buttonAdd:hover {
   box-shadow: 0 4px 5px rgba(2, 2, 2, 0.6);
-}
+} */
 
 
 

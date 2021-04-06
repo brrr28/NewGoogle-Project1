@@ -5,7 +5,7 @@ function getRequest(url, params) {
     xhr.open("GET", apiUrl + url, true);
     xhr.onreadystatechange = function () {
       if (xhr.readyState === 4 && xhr.status === 200) {
-        resolve(xhr.response)
+        resolve(xhr.response);
       }
     };
 
@@ -14,66 +14,101 @@ function getRequest(url, params) {
 }
 
 getRequest("/developers")
-.then(function(response) {
-  var data = JSON.parse(response);
-  showInfoDevelopers(data)
-}).catch(function(error){
-  console.log("Error!!!");
-  console.log(error);
-});
+  .then(function (response) {
+    var data = JSON.parse(response);
+    showInfoDevelopers(data);
+  })
+  .catch(function (error) {
+    console.log("Error!!!");
+    console.log(error);
+  });
+/*************************************************************************************** */
+developBox = document.querySelector(".developBox");
+var modalBlock = document.createElement("div");
+modalBlock.setAttribute("class", "modalBlock");
+var modalContent = document.createElement("div");
+modalContent.setAttribute("class", "modalContent");
+var modalSpan = document.createElement("span");
+modalSpan.setAttribute("class", "modalSpan");
+var modalButton = document.createElement("button");
+modalSpan.innerHTML = "&times;";
+modalButton.innerHTML = "Button"
 
 
+modalBlock.style.border = "3px solid black";
+modalBlock.style.display = "none";
+modalContent.appendChild(modalSpan);
+modalContent.appendChild(modalButton);
+modalBlock.appendChild(modalContent);
+developBox.appendChild(modalBlock);
 
-let card__info = document.getElementsByClassName("card__info"); 
+var input2 = document.createElement('input');
 
-function showInfoDevelopers(json) {
-  var dataDevelopInfo = json; 
-    for (var i = 0; i <= dataDevelopInfo.developers.length; i++) {
-      var ul = document.createElement("ul");
-      for (let key in dataDevelopInfo.developers[i]) {
-        console.log(key)
-        if(key === "ID"){
-          continue;
-        }
-        else{
-          let li = document.createElement("li");
-        ul.appendChild(li)
-        li.innerHTML = `${[key]}: ${dataDevelopInfo.developers[i][key]}`;
-        }
-        
-        card__info[i].appendChild(ul);
-      }
+
+function showInfoDevelopers(data) {
+
+
+  for (var i = 0; i < data.developers.length; i++) {
+
+    
+    var cardDevelop = document.createElement("div");
+    cardDevelop.setAttribute("class", "cardDevelop");
+    var buttonEdit = document.createElement("button");
+    buttonEdit.innerHTML = "blalalal";
+    buttonEdit.setAttribute("class", "buttonEdit");
+    var ul = document.createElement("ul");
+    var imgDev = document.createElement("img");
+    imgDev.setAttribute("class", "imgDev");
+   
+
+
+    for (let key in data.developers[i]) {
+
+
+      
+      console.log(data.developers[i]["Img"]);
+      imgDev.src = data.developers[i]["Img"];
+      var li = document.createElement("li");
+      if (key != "Img") 
+      li.innerHTML = `${key}: ${data.developers[i][key]}`;
+      var input = document.createElement('input');
+      input.value = ` ${data.developers[i][key]}`;
+
+
+      cardDevelop.appendChild(imgDev);
+      ul.appendChild(li);
+      cardDevelop.appendChild(ul);
+      cardDevelop.appendChild(buttonEdit);
+     
+    }
+    modalContent.appendChild(input)
+    developBox.appendChild(cardDevelop); 
   }
+
+ 
+
+  document.body.addEventListener("click", (e) => {
+    if (e.target.classList.contains("buttonEdit"))
+      modalBlock.style.display = "block";
+     
+      modalContent.appendChild(input)
+
+
+  });
 }
 
 
 
-////////////////___________modal on cards develop__________//////
+modalSpan.addEventListener("click", function () {
+  modalBlock.style.display = "none";
+});
 
-var modalEdit__modal = document.querySelector('.modalEdit__modal');
-var modalBtn = document.querySelectorAll('.modalBtn');
-var modalEdit__modalClose = document.getElementsByClassName('modalEdit__modal-close')[0];
+window.addEventListener("click", function (e) {
+  if (e.target == modalBlock) {
+    modalBlock.style.display = "none";
+  }
+});
 
-modalBtn.forEach(function(modalBtn) {
-  modalBtn.addEventListener('click', function () {
-    modalEdit__modal.style.display = 'block'
-      console.log(11)
-      editInfo__field = document.querySelector('.editInfo__field')
-      editInfo__field.innerHTML = 'mmkff'
-  })
-})
-
-modalEdit__modalClose.addEventListener('click', function () {
-  modalEdit__modal.style.display = 'none';
-}) 
-
-
-window.addEventListener('click', function (e) {
-    if (e.target == modalEdit__modal){
-      modalEdit__modal.style.display = 'none';
-        
-    }
-})
 
 
 // var a = {
@@ -87,10 +122,8 @@ window.addEventListener('click', function (e) {
 
 //   xhr.send(JSON.stringify(data))
 // }
-  
 
-
-  window.addEventListener('scroll' , function (){
-    var header = document.querySelector('.header__wrapper');
-    header.classList.toggle('header__scroll', window.scrollY > 0);
-  });
+window.addEventListener("scroll", function () {
+  var header = document.querySelector(".header__wrapper");
+  header.classList.toggle("header__scroll", window.scrollY > 0);
+});
