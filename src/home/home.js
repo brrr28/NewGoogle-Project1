@@ -1,3 +1,6 @@
+import "./home.scss"
+
+
 // эмуляция получения фетч запроса через промис
 let infoDevelopers = new Promise(function (resolve, reject) {
     var a = fetch("infoDevelop.json");

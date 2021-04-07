@@ -2,10 +2,11 @@
   "name": "newgoogle-project1-1",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "home.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx webpack serve --mode development --open"
+    "start": "npx webpack serve --mode development --open",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
