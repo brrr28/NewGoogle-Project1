@@ -1,4 +1,3 @@
-<<<<<<< HEAD:home/home.js
 var apiUrl = "http://localhost:3000";
 /* GET */
 function getRequest(url, params) {
@@ -33,16 +32,6 @@ getRequest("/developers")
   .then(function (response) {
     var data = JSON.parse(response);
     showInfoDevelopers(data);
-=======
-import "./home.scss"
-
-
-// эмуляция получения фетч запроса через промис
-let infoDevelopers = new Promise(function (resolve, reject) {
-    var a = fetch("infoDevelop.json");
-    resolve(a);
-    reject(new Error("Smsg wrong!"));
->>>>>>> develop:src/home/home.js
   })
   .catch(function (error) {
     console.log("Error!!!");
