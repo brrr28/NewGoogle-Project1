@@ -21,6 +21,7 @@ function handleReq(request, response){
  if(request.url === "/developers" && request.method === 'GET'){
 
    var data = fs.readFileSync('./allFileJson/developers.json')
+  console.log(data)
    response.writeHead(200, headers);
    response.end(data);
  }
@@ -35,11 +36,9 @@ function handleReq(request, response){
      if(error){
         throw error;
      }
-     console.log(request.body)
      var devs = JSON.parse(fs.readFileSync('./allFileJson/developers.json'))
      var data = Object.assign(devs, request.body);
      fs.writeFileSync("./allFileJson/developers.json",JSON.stringify(data));
-     
      response.writeHead(200, headers);
      response.end('daaa detkaaa')
      
