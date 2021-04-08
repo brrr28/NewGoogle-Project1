@@ -2,7 +2,7 @@ var apiUrl = "http://localhost:3000";
 /* GET */
 function getRequest(url, params) {
   return new Promise(function (resolve, reject) {
-    var xhr = new XMLHttpRequest(); //
+    var xhr = new XMLHttpRequest(); 
     xhr.open("GET", apiUrl + url, true);
     xhr.onreadystatechange = function () {
       if (xhr.readyState === 4 && xhr.status === 200) {
