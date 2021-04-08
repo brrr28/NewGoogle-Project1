@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-.body {
+body {
   font-family: "Montserrat", sans-serif;
 }
 
@@ -13,32 +13,25 @@ li {
 }
 .wraper {
   width: 100%;
-  //min-height: 100vh;
+  min-height: 100vh;
   background: url(/publick/images/minimalizm-gradient-fon.jpg) center no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
+  position: relative;
+  overflow: hidden;
 }
 .container {
   max-width: 1296px;
-
   margin: 0 auto;
   padding: 0 20px;
   overflow: hidden;
 }
 .header {
-  font-family: "Montserrat", sans-serif;
   height: 150px;
   position: sticky;
   top: 0;
-  left: 0;
   z-index: 1;
   transition: all 0.5s;
-
-  /* background: 
-  url(../home/images/minimalizm-gradient-fon.jpg) center
-  no-repeat;
-  -webkit-background-size: cover;
-  background-size: cover; */
 }
 .header__scroll {
   background: rgb(238, 214, 214, 0.7);
@@ -63,7 +56,6 @@ li {
   color: #fff;
 }
 
-/* Navigation */
 .nav {
   font-size: 16px;
   text-transform: uppercase;
@@ -74,10 +66,8 @@ li {
   vertical-align: top;
   margin: 0 60px;
   position: relative;
-
   color: #fff;
   text-decoration: none;
-
   transition: color 0.2s linear;
 }
 
@@ -87,13 +77,11 @@ li {
   width: 100%;
   height: 2px;
   opacity: 0;
-
   background-color: rgba(61, 213, 240, 0.726);
   position: absolute;
   top: 100%;
   left: 0;
   z-index: 1;
-
   transition: opacity 0.5s linear;
 }
 
@@ -112,24 +100,14 @@ ul > li {
 li {
   list-style: none;
 }
-.wraper {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-}
-.container {
-  max-width: 1296px;
-  margin: 0 auto;
-  padding: 0 20px;
-  overflow: hidden;
-}
 
-/*****************************      MAIN    ****************************************/
 
+.main{
+  margin-bottom: 200px;
+}
 .developBox {
   display: flex;
   justify-content: space-around;
-   margin-bottom: 200px;
 }
 .developBox__cardDevelop {
   width: calc(25% - 15px);
@@ -144,7 +122,6 @@ li {
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
-  
 }
 
 .developBox__imgContainer ~ p {
@@ -196,7 +173,6 @@ li {
 	background: #b68194;
 }
 
-/*************** m o d a l **************/
 
 .developBox__blockInputs {
   display: flex;
@@ -211,13 +187,13 @@ li {
   width: 100%;
   height: 100%;
   overflow: auto;
-  
+  border: none;
   background-color: rgba(215, 219, 219, 0.8);
 }
 
 .developBox__modalContent {
   background: linear-gradient(90deg, #aea4e3, #d3ffe8);
-  margin: 15% auto;
+  margin: 5% auto;
   padding: 50px;
   border: 1px solid #888;
   height: auto;
@@ -247,8 +223,6 @@ li {
   background: #f6f6f6;
   border-radius: 8px;
 }
-
-
 
 .blockInfo__textarea {
   width: 300px;
@@ -296,8 +270,6 @@ li {
     background: #b68194;
   }
 
-
-/*************** m o d a l **************/
 
 .footer {
   position: absolute;

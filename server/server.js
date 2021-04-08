@@ -1,9 +1,7 @@
 var fs= require('fs');
 var http = require('http');
 var { json } = require('body-parser');
-
 var jsonParser = json();
-
 var server = http.createServer(handleReq)
 
 function handleReq(request, response){
@@ -30,7 +28,6 @@ function handleReq(request, response){
   response.writeHead(200, headers);
   response.end(data);
 }
-
  if(request.url === "/developers" && request.method === "POST"){
    jsonParser(request, response, (error) => {
      if(error){

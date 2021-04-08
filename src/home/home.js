@@ -1,7 +1,6 @@
 import "./home.scss"
 var apiUrl = "http://localhost:3000";
 
-/* GET */
 function getRequest(url, params) {
   return new Promise(function (resolve, reject) {
     var xhr = new XMLHttpRequest(); 
@@ -16,7 +15,6 @@ function getRequest(url, params) {
   });
 }
 
-/* POST */
 function postRequest(url, data) {
   return new Promise(function(succeed, fail) {
     var request = new XMLHttpRequest();
@@ -29,7 +27,6 @@ function postRequest(url, data) {
   });
 }
 
-
 getRequest("/developers")
   .then(function (response) {
     var data = JSON.parse(response);
@@ -39,10 +36,7 @@ getRequest("/developers")
     console.log("Error!!!");
     console.log(error);
   });
-/*************************************************************************************** */
 var developBox = document.querySelector(".developBox");
-
-// MODALKA
 var modalBlock = document.createElement("div");
 modalBlock.setAttribute("class", "developBox__modalBlock");
 var modalContent = document.createElement("div");
@@ -53,12 +47,11 @@ var modalButton = document.createElement("button");
 modalButton.setAttribute("class", "developBox__modalButton");
 modalSpan.innerHTML = "&times;";
 modalButton.innerHTML = "Save change";
-modalBlock.style.border = "3px solid black";
 modalBlock.style.display = "none";
 var modalBlockInputs = document.createElement("div");
 modalBlockInputs.setAttribute("class", "developBox__blockInputs , blockInfo");
 
-var inputName = document.createElement("input"); // в модалку
+var inputName = document.createElement("input"); 
 inputName.setAttribute('type','text')
 var inputAge = document.createElement("input");
 inputAge.setAttribute('type','number')
@@ -80,11 +73,9 @@ modalBlockInputs.appendChild(inputHobbie);
 modalBlockInputs.appendChild(modalButton);
 modalBlock.appendChild(modalContent);
 developBox.appendChild(modalBlock);
-// MODALKA end///////////////////////////////
 
 function showInfoDevelopers(data) {
   for (let i = 0; i < data.developers.length; i++) {
-    //console.log(data.developers[i]);
     var divBoxInfo = document.createElement("div");
     divBoxInfo.setAttribute("class", "developBox__cardDevelop");
     var imgContainer = document.createElement("div");
@@ -123,13 +114,10 @@ function showInfoDevelopers(data) {
     divBoxInfo.appendChild(pHobbie);
     divBoxInfo.appendChild(buttonWrap);
     buttonWrap.appendChild(buttonEdit);
-
     developBox.appendChild(divBoxInfo);
 
-    /// клик на кнопку редактировать данные объкта
     buttonEdit.onclick = function () {
       modalBlock.style.display = "block";
-
       inputName.value = `${data.developers[i]["Name"]}`;
       inputName.setAttribute("placeholder", "Enter name");
       inputAge.value = `${data.developers[i]["Age"]}`;
@@ -171,6 +159,7 @@ window.addEventListener("click", function (e) {
     modalBlock.style.display = "none";
   }
 });
+
 
 window.addEventListener("scroll", function () {
   var header = document.querySelector(".header__wrapper");
