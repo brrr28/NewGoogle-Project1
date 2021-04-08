@@ -13,7 +13,7 @@ li {
 }
 .wraper {
   width: 100%;
-  min-height: 100vh;
+  //min-height: 100vh;
   background: url(/publick/images/minimalizm-gradient-fon.jpg) center no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
@@ -129,7 +129,7 @@ li {
 .developBox {
   display: flex;
   justify-content: space-around;
-   margin: 20px 0 200px; /* в деве урать */
+   margin-bottom: 200px;
 }
 .developBox__cardDevelop {
   width: calc(25% - 15px);

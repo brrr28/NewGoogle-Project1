@@ -146,12 +146,14 @@ function showInfoDevelopers(data) {
 
 
       modalButton.onclick = function () {
+        console.log(1)
         data.developers[i]["Name"]=inputName.value;
         data.developers[i]["Age"]=inputAge.value;
         data.developers[i]["Color"]=inputColor.value;
         data.developers[i]["Phone"]=inputPhone.value;
         data.developers[i]["City"]=inputCity.value;
         data.developers[i]["Hobbie"]=inputHobbie.value;
+        location.reload()
         postRequest("/developers",data );
       }
      };
