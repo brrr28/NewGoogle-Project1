@@ -1,5 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   mode: "development",
@@ -31,7 +32,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, "./src/home/home.html"),
-      filename: "index.html",
+      filename: "home.html",
       chunks: ["home"],
     }),
     new HtmlWebpackPlugin({
@@ -44,6 +45,11 @@ module.exports = {
       filename: "question.html",
       chunks: ["question"],
     }),
+    new CopyPlugin({
+      patterns: [
+        { from: "publick/images", to: "images" },
+      ],
+    })
   ],
   devServer: {
     contentBase: path.join(__dirname, "dist"),

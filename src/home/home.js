@@ -40,7 +40,7 @@ getRequest("/developers")
     console.log(error);
   });
 /*************************************************************************************** */
-developBox = document.querySelector(".developBox");
+var developBox = document.querySelector(".developBox");
 
 // MODALKA
 var modalBlock = document.createElement("div");
@@ -55,7 +55,7 @@ modalSpan.innerHTML = "&times;";
 modalButton.innerHTML = "Save change";
 modalBlock.style.border = "3px solid black";
 modalBlock.style.display = "none";
-modalBlockInputs = document.createElement("div");
+var modalBlockInputs = document.createElement("div");
 modalBlockInputs.setAttribute("class", "developBox__blockInputs , blockInfo");
 
 var inputName = document.createElement("input"); // в модалку
