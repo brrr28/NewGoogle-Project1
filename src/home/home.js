@@ -1,4 +1,6 @@
+import "./home.scss"
 var apiUrl = "http://localhost:3000";
+
 /* GET */
 function getRequest(url, params) {
   return new Promise(function (resolve, reject) {
